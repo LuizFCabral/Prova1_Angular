@@ -13,6 +13,15 @@
           <app-select (sendValue)="getOpt1($event)"></app-select>
         </div>
       </div>
+        <div class="input-group mt-3">
+          <app-input
+              style="width: 85%;"
+              (sendValue)="getCambio($event)"
+              [select]="'Valor de Cambio'"
+              [value]="cambio"
+              [readOnly]="false">
+          </app-input>
+      </div>
       <div class="mt-4 container">
         <div class="input-group justify-content-center">
           <app-input
