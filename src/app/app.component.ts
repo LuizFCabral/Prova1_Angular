@@ -29,14 +29,12 @@ export class AppComponent {
   }
 
   convertN2(opt1: string, opt2: string, num1: number) {
-    if (opt1 === 'Real' && opt2 === 'Dolar') this.n2 = num1 / 0.19;
-    /*
-    else if (opt1 === 'cm' && opt2 === 'km') this.n2 = num1 / 100000;
-    else if (opt1 === 'm' && opt2 === 'cm') this.n2 = num1 * 100;
-    else if (opt1 === 'm' && opt2 === 'km') this.n2 = num1 / 1000;
-    else if (opt1 === 'km' && opt2 === 'cm') this.n2 = num1 * 100000;
-    else if (opt1 === 'km' && opt2 === 'm') this.n2 = num1 * 1000;
+    if (opt1 === 'Real' && opt2 === 'Dolar') this.n2 = num1 * 0.1967187;
+    else if (opt1 === 'Real' && opt2 === 'Euro') this.n2 = num1 * 0.181475;
+    else if (opt1 === 'Dolar' && opt2 === 'Real') this.n2 = num1 / 0.1967187;
+    else if (opt1 === 'Dolar' && opt2 === 'Euro') this.n2 = num1 * 0.9225092;
+    else if (opt1 === 'Euro' && opt2 === 'Real') this.n2 = num1 / 0.181475;
+    else if (opt1 === 'Euro' && opt2 === 'Dolar') this.n2 = num1 / 0.9225092;
     else this.n2 = num1;
-    */
   }
 }
