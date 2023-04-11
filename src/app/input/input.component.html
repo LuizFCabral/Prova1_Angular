@@ -1,0 +1,11 @@
+<input
+  type="text"
+  class="form-control-lg me-3"
+  placeholder="{{
+    select
+  }}"
+  [(ngModel)]="value"
+  (change)="onChange()"
+  value="{{ value }}"
+  [readonly]="readOnly"
+/>
